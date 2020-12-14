@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friend - kokoa Clone</title>
+    <title>chat - kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,72 +23,49 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://avatars1.githubusercontent.com/u/74979160?s=60&v=4"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component-title">Nicolas</h4>
-            <!--   <h6 class="user-component__subtitle">this is text whatever</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-
+    <main class="main-screen">
+      <a href="chats.html">
         <div class="user-component">
           <div class="user-component__column">
             <img
               src="https://avatars1.githubusercontent.com/u/74979160?s=60&v=4"
-              class="user-component__avatar user-component__avatar--sm"
+              class="user-component__avatar user-component__avatar"
             />
             <div class="user-component__text">
-              <h4 class="user-component-title user-component-title--not-bold">
-                Channel
-              </h4>
+              <h4 class="user-component-title">Nicolas</h4>
+              <h6 class="user-component__subtitle">
+                please check My kakao Account info
+              </h6>
             </div>
           </div>
           <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
-            </div>
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
           </div>
         </div>
-      </div>
+      </a>
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="Friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
             <span class="nav_notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i
+            <i class="fas fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -104,14 +81,10 @@
         </li>
       </ul>
     </nav>
-    <div id="splash-screen">
-      <i class="fas fa-comment"></i>
-    </div>
 
     <div id="no-mobile">
       <span>Your Screen is too big</span>
     </div>
-
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="annoymous"
